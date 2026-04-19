@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Keyboard Tab Switcher",
+  "version": "1.0",
+  "description": "Switch tabs using keyboard shortcuts.",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "next-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Right",
+        "mac": "Command+Shift+Right"
+      },
+      "description": "Switch to the next tab"
+    },
+    "prev-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Left",
+        "mac": "Command+Shift+Left"
+      },
+      "description": "Switch to the previous tab"
+    }
+  }
+}
