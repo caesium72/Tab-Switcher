@@ -9,6 +9,10 @@
     "128": "icon128.png"
   },
   "permissions": ["tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Keyboard Tab Switcher - Click to configure shortcuts"
+  },
   "background": {
     "service_worker": "background.js"
   },
